@@ -14,10 +14,38 @@ abstract class Ingredient{
 	abstract void prepareren();
 	
 }
+class Ui extends Ingredient{
 
+	@Override
+	void prepareren() {
+		System.out.println("Ui gesneden.");
+	}
+	
+}
+class Saus extends Ingredient{
+
+	@Override
+	void prepareren() {
+		System.out.println("Saus geroerd.");
+	}
+	
+}
+class Vlees extends Ingredient{
+
+	@Override
+	void prepareren() {
+		System.out.println("Vlees gebakken.");
+	}
+	
+}
 class Gerecht{
 	ArrayList<Ingredient> ingredienten = new ArrayList<Ingredient>();
 	boolean isGeprepareerd() {
-		return false;
+		for(Ingredient a:ingredienten) {
+			if(!a.geprepareerd) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
