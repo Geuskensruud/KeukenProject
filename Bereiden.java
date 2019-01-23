@@ -5,7 +5,7 @@ import java.util.*;
 public class Bereiden {
 
 	public static void main(String[] args) {
-
+		
 	}
 }
 
@@ -49,3 +49,4 @@ class Gerecht{
 		return true;
 	}
 }
+class Felix{}
