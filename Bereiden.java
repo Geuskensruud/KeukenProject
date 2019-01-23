@@ -49,3 +49,4 @@ class Gerecht{
 		return true;
 	}
 }
+class Felix{}
